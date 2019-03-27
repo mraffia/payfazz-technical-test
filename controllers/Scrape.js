@@ -31,6 +31,9 @@ exports.scrapeKurs = (req, res, next) => {
 
         console.log("Scraping done");
 
+        // Cek apabila data Kurs tanggal hari ini sudah ada di database atau tidak
+        // Apabila sudah ada, maka akan skip
+        // Apabila belum ada, data akan ditambahkan kedalam database
         for (var i = 2; i < kurs.length; i++) {
           console.log(kurs[i]);
 

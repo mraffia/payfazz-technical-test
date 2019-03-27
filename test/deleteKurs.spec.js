@@ -5,7 +5,7 @@ const app = require('../server');
 const request = require('supertest');
 
 // Test: available data (create dummy data in database first!)
-describe('GET /api/kurs/1111-11-10 (available)', function () {
+describe('DELETE /api/kurs/1111-11-10 (available)', function () {
   it('should respond with 1', function () {
     return request(app)
       .delete('/api/kurs/1111-11-10')
@@ -17,7 +17,7 @@ describe('GET /api/kurs/1111-11-10 (available)', function () {
 });
 
 // Test: data not available in the database
-describe('GET /api/kurs/1111-11-12 (not available)', function () {
+describe('DELETE /api/kurs/1111-11-12 (not available)', function () {
   it('should respond with 0', function () {
     return request(app)
       .delete('/api/kurs/1111-11-12')
@@ -29,7 +29,7 @@ describe('GET /api/kurs/1111-11-12 (not available)', function () {
 });
 
 // Test: invalid request format
-describe('GET /api/kurs/asd (invalid format)', function () {
+describe('DELETE /api/kurs/asd (invalid format)', function () {
   it('should respond with 0', function () {
     return request(app)
       .delete('/api/kurs/asd')
