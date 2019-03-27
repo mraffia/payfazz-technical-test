@@ -4,14 +4,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "Mohammad Raffi Akbar",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.5",
     "dotenv": "^6.2.0",
@@ -22,6 +21,7 @@
     "nodemon": "^1.18.10",
     "request": "^2.88.0",
     "sequelize": "^5.1.1",
-    "sequelize-cli": "^5.4.0"
+    "sequelize-cli": "^5.4.0",
+    "supertest": "^4.0.2"
   }
 }

@@ -1,6 +1,6 @@
 module.exports = {
   ...require('./Kurs'),
-  ...require('./Scrap'),
+  ...require('./Scrape'),
 };
 
 module.exports.error = (err, req, res, next) => {

@@ -2,7 +2,8 @@ const models = require('../models');
 const request = require('request');
 const cheerio = require('cheerio');
 
-exports.scrapKurs = (req, res, next) => {
+// Routing nomor 1: request GET scraping data dari web dan menambahkan ke dalam database
+exports.scrapeKurs = (req, res, next) => {
   let dateNow = new Date();
   let day = String(dateNow.getDate()).padStart(2, '0');
   let month = String(dateNow.getMonth() + 1).padStart(2, '0');

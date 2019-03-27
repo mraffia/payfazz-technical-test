@@ -1,2 +1,2 @@
 module.exports.kurs = require('./kurs');
-module.exports.scrap = require('./scrap');
+module.exports.scrape = require('./scrape');

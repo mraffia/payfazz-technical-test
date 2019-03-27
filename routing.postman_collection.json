@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "cd386b6b-7040-428a-bcb1-e39cef75b73a",
+		"name": "routing",
+		"description": "Collection in berisi semua API routing dari soal Technical Test untuk Payfazz Software Engineering Intern",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7000/api/kurs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"symbol\": \"AAA\",\r\n  \"e_rate\": {\r\n  \t\"jual\": 1803.55,\r\n  \t\"beli\": 177355\r\n  },\r\n  \"tt_counter\": {\r\n  \t\"jual\": 1803.55,\r\n  \t\"beli\": 177355\r\n  },\r\n  \"bank_notes\": {\r\n  \t\"jual\": 1803.55,\r\n  \t\"beli\": 177355\r\n  },\r\n  \"date\": \"2018-05-16\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/kurs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs"
+					]
+				},
+				"description": "Routing nomor 5"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/api/kurs/:date",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/kurs/:date",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs",
+						":date"
+					],
+					"variable": [
+						{
+							"key": "date",
+							"value": ""
+						}
+					]
+				},
+				"description": "Routing nomor 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/api/kurs?startdate=:stardate&enddate=:enddate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/kurs?startdate=:stardate&enddate=:enddate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": ":stardate"
+						},
+						{
+							"key": "enddate",
+							"value": ":enddate"
+						}
+					]
+				},
+				"description": "Routing nomor 3"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/api/kurs/:symbol?startdate=:stardate&enddate=:enddate",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/kurs/:symbol?startdate=:stardate&enddate=:enddate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs",
+						":symbol"
+					],
+					"query": [
+						{
+							"key": "startdate",
+							"value": ":stardate"
+						},
+						{
+							"key": "enddate",
+							"value": ":enddate"
+						}
+					],
+					"variable": [
+						{
+							"key": "symbol",
+							"value": ""
+						}
+					]
+				},
+				"description": "Routing nomor 4"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/api/indexing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/indexing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"indexing"
+					]
+				},
+				"description": "Routing nomor 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/api/kurs",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"symbol\": \"BBB\",\r\n  \"e_rate\": {\r\n  \t\"jual\": 1803.55,\r\n  \t\"beli\": 177355\r\n  },\r\n  \"tt_counter\": {\r\n  \t\"jual\": 1803.55,\r\n  \t\"beli\": 177355\r\n  },\r\n  \"bank_notes\": {\r\n  \t\"jual\": 1803.55,\r\n  \t\"beli\": 177355\r\n  },\r\n  \"date\": \"2018-05-17\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/kurs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"kurs"
+					]
+				},
+				"description": "Routing nomor 6"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8b7e269f-6550-4064-8b9b-5a3d459bbe5c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ed560549-d031-49ef-b651-5b4118120102",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
