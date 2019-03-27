@@ -5,10 +5,10 @@
 1. `git clone` repository ini
 2. `npm install` pada root directory hasil clone
 
-### Run The Server
+### Run the Server
 `nodemon`
 
-### Test The Code
+### Test the Code
 `npm test`
 
 ### Set Up Database
