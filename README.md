@@ -16,5 +16,5 @@ Developed by Mohammad Raffi Akbar
 2. Apabila sudah sesuai, jalankan `sequelize db:migrate`
 
 ### Prerequisite
-2. npm
-3. xampp (MySql phpMyAdmin)
+1. npm
+2. xampp (MySql phpMyAdmin)
